@@ -1,0 +1,74 @@
+$mainColor: #06264d;
+$secondColor: #00d798;
+.text-second {
+  color: $secondColor;
+}
+.text-main {
+  color: $mainColor;
+}
+.bg-main {
+  background-color: $mainColor;
+}
+.text-shadow{
+    text-shadow: 1px 2px #fff;
+}
+header {
+  background-image: linear-gradient(45deg, rgba(4, 4, 134, 0.2), $mainColor);
+}
+main {
+  .landing-page {
+    background-image: url(../images/landing-pagebg.jpg);
+    background-size: cover;
+    img.corona-img {
+      animation: rotateimg 33s linear infinite;
+    }
+  }
+  .symptoms{
+      background-image: url(../images/landing-pagebg.jpg);
+      background-size: cover;
+      .row{
+          .item{
+              > div{
+                transition: .5s ease-in-out;
+                &:hover{
+                  transform: translateY(-5px) scale(1.005);
+                  box-shadow: 0px 0px 22px $secondColor;
+                }
+              }
+             
+          }
+      }
+  }
+  .meet-doc{
+    background-image: url(../images/landing-pagebg.jpg);
+    background-size: cover;
+    .br-y{
+        border-top:  1px solid #ecf0f3;
+        border-bottom:  1px solid #ecf0f3;
+    }
+  }
+  .avoid-virus{
+    background-image: url(../images/landing-pagebg.jpg);
+    background-size: cover;
+  }
+  .should-box{
+    transition: .5s ease-in-out;
+    &:hover{
+      box-shadow: 0px 0px 22px $secondColor;
+    }
+  }
+}
+footer{
+    
+    background-image: url(../images/footer-bg-3.jpg);
+    background-size: cover;
+}
+
+@keyframes rotateimg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
